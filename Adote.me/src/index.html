@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/home.css"><link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/adote.css"> <link rel="stylesheet" href="style/sobre.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Adote.ME</title>
+    
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><i class="fa-solid fa-paw" id="nav_logo"> AdoteMe <i class="fa-solid fa-paw" id="nav_logo1"></i></i></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adote">Adote</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+          
+            </ul>
+           <button class="btn-default">
+                CADASTRE-SE
+            </button>
+            <!--Exclusivo para o menu quando estiver no mobile-->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!--Montando menu mobile-->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adote">Adote</a>
+                </li>
+            </ul>
+           <button class="btn-default">
+                CADASTRE-SE
+            </button>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                Amigo não se <span>compra</span>
+                </h1>
+                <p class="description">
+                    Por que adotar? Nesse exato momento, existem milhares de doguinhos e gatinhos esperando um humano para chamar de seu.
+                </p>
+                <div id="cta-buttons">
+                    <a href="pet.html" class="btn-default">Quero adotar</a>                   
+                </div>
+                
+            </div>
+            <div id="banner">
+                <img src="img/dogCat.png" alt="">
+            </div>
+           
+        </section>
+        <section id="adote">
+             <h2 class="section-title">Animais</h2>
+             <h3 class="section-subtitle">Nosso site está cheio de doguinhos e gatinhos ansiosos por uma família</h3>
+             <div id="pets">
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/ipanema.png" class="pet-image" alt="">
+                    <h3 class="pet-title">Ipanema</h3>
+                    <span class="pet-decription">Cachorro | Fêmea | Adulto | Porte médio</span>
+                    <div class="pet-history">
+                        <p >Gente Linda! Esta jovem menina de aproximadamente 3 anos de idade já sofreu muito nas ruas, mas isso não tirou sua doçura. Está procurando um Lar com humanos cheios de amor.</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p><i class="fa-solid fa-envelope" id="poupap">adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+                </div>
+                    <div class="pet">
+                        <div class="pet-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="img/pets/julie.png" class="pet-image" alt="">
+                        <h3 class="pet-title">Julie</h3>
+                        <span class="pet-decription">Cachorro | Fêmea | Adulto | Porte médio</span>
+                        <div class="pet-history">
+                            <p >Tem por volta de 3 anos. Esta cadastrada, vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!.</p>
+                            <div class="btn-botom">
+                                <button class="btn-default" id="btn-contato1">ENTRE EM CONTATO</button>
+                                <dialog>
+                                    <h2 class="section-title">Quer adotar?</h2>
+                                    <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                    <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                    <p><i class="fa-solid fa-envelope" id="poupap">adote@gmail.com</i></p>
+                                    <button class="btn-default">Cancelar</button>
+                                </dialog>
+                                </div>
+                        </div>
+                </div>
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/rex.png" class="pet-image" alt="">
+                    <h3 class="pet-title">Rex</h3>
+                    <span class="pet-decription">Cachorro | Macho | Adulto | Porte grande</span>
+                    <div class="pet-history">
+                        <p >pitbull resgatado de maus tratos, foi cuidado, castrado, vacinado. Tem por volta de 2 a 3 anos é muito dócil, calmo e brincalhão.</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato2">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p><i class="fa-solid fa-envelope" id="poupap">adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+            </div>
+            <div class="pet">
+                <div class="pet-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/pets/joaquim.png" class="pet-image" alt="">
+                <h3 class="pet-title">Joaquim</h3>
+                <span class="pet-decription">Cachorro | Macho | Filhote | Porte grande</span>
+                <div class="pet-history">
+                    <p>Joaquim, filhotinho de 45 dias para adoção responsável. Ele é um cachorrinho super dócil, brincalhão, dengoso e muito lindo! Um típico caramelo legítimo.</p>
+                    <div class="btn-botom">
+                        <button class="btn-default" id="btn-contato3">ENTRE EM CONTATO</button>
+                        <dialog>
+                            <h2 class="section-title">Quer adotar?</h2>
+                            <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                            <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                            <p><i class="fa-solid fa-envelope" id="poupap">adote@gmail.com</i></p>
+                            <button class="btn-default">Cancelar</button>
+                        </dialog>
+                        </div>
+                </div>
+                
+        </div>
+
+    
+             </div>
+             <div class="btn-mais">
+                <a href="pet.html"><button class="btn-default">Ver mais</button></a>  
+             </div>
+            
+        </section>
+        <section id="sobre">
+            <h2 class="section-subtitle">Porque <span id="destac">adotar</span>?</h2>
+             <div id="cards">
+                <div class="card">
+                    <img src="img/info1.png" class="image-card">
+                    <p> <span id="destac">Na verdade a pergunta é:<br></span>se você pode mudar o destino de um animal de rua, por que não faria isso?</p>
+                </div>
+                <div class="card">
+                    <img src="img/info2.png" class="image-card">
+                    <p><span id="destac">Melhorar a saúde<br></span>Ter um animal de estimação pode ajudar a combater a solidão, melhorar a qualidade do sono e reduzir o estresse. 
+                        </p>
+                </div>
+                <div class="card">
+                    <img src="img/info3.png" class="image-card">
+                    <p><span id="destac">Não há recompensa maior <br></span>do que vê-los se 
+                         tornando aquela coisinha alegre e 
+                         saudável depois de uma boa dose de 
+                         cuidado e carinho</p>
+                </div>
+             </div>
+             <div id="infos">
+                <div class="adoteme">
+                 <h1 class="title">Sobre a <span>AdoteME</span>
+                 </h1>
+                 <p id="adoteme-description"> A gente acredita que <strong>todo animal de rua merece um lar.</strong> 
+                    Por isso, nosso trabalho é conectar os animais que estão em abrigos com pessoas que 
+                    estejam procurando por um doguinho ou gatinho pra chamar de seu. <br>
+                     Ao adotar, as pessoas mostram que os pets abandonados merecem um lar cheio de amor e carinho. Lembre-se de que a mudança 
+                     de mentalidade é um processo gradual, mas cada ação contribui para um mundo melhor para os animais. Com esforços contínuos
+                     de conscientização e deucação, <strong>é possível reduzir o abandono de animais</strong>.
+                 </p>
+                 <h1 class="title">Como <span>funciona</span>?</h1>
+                 <p id="adoteme-description">Nós não temos abrigos, e nem fazemos resgates de animais! Nosso trabalho é 100% online, oferecendo visibilidade aos animaizinhos que precisam de um lar. Para adotar algum pet, entre em contato com protetor do animal. Deixamos os meios de contatos em pop up. </p>
+                </div>  
+                 <div id="adoteme-banner">
+                    <img src="img/Texto do seu parágrafo (2).png" id="sobre-image">
+                </div>     
+             </div>
+        
+            
+        </section>
+    </main>
+    <footer>
+        <img src="img/wave (1).svg" alt="">
+        
+        <div id="footer-itens">
+            <div id="adotar">
+                <h3>Apoiadores</h3>
+                <a href="https://www2.itanhaem.sp.gov.br/2021/10/07/feiras-de-adocao-animal-serao-realizadas-neste-final-de-semana/"><img src="img/ita.png" alt=""></a>
+                <a href="https://www.instagram.com/_aumofadinhaspet/"><img src="img/aumofa.png" alt=""></a>
+            </div>
+            <div id="copy-logo">
+                <a href="index.html"><i class="fa-solid fa-paw" id="nav_logo1"> AdoteMe <i class="fa-solid fa-paw" id="nav_logo1"></i></i></a>
+                <span id="copy">&copy 2024 Kauan Henrique </span>
+            </div>
+            <div id="adotar">
+                <h3>Adote</h3>
+                <p>Adote com responsabilidade</p>
+                <a href="pet.html" class="btn-default1">Pesquisar animais</a>
+            </div>
+         
+        </div>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

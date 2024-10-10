@@ -1,0 +1,124 @@
+#adote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#pets{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.pet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.pet-heart {
+    position: absolute;
+    background-color: #e9a209;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #fff9ea;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+.pet-decription{
+    color: #1d1d1d;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.pet-history{
+    text-align:left;
+    color: #5f5151;
+}
+.pet-history .btn-default{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 10%;
+}
+.btn-botom{
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    
+}
+.pet-image{
+    border-radius:10%;
+    width: 80%;
+}
+
+.btn-mais{
+ margin-top: 20px;
+
+
+}
+.btn-mais a{
+    text-decoration: none;
+}
+@keyframes anima{
+    0%{
+        transform: scale(1);
+       background-color: #ffcb45;
+       border-radius: 8px;
+    }
+    100%{
+        transform: scale(1.5);
+        background-color: #ffcb45;
+        border-radius: 8px;
+        
+    }
+}
+.btn-mais:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+
+
+}
+#poupap{
+    color: #e9a209;
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 1170px){
+    #pets{
+        flex-wrap: wrap ;
+        justify-content: center;   
+    }
+    .pet{
+        width: calc(50% - 12px);
+    }
+}
+@media screen and (max-width: 600px){
+    
+    .pet{
+        width: 100%;
+    }
+    #menu .section-subtitle{
+        text-align: center;
+    }
+}

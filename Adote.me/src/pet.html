@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/home.css"><link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/adote.css"> <link rel="stylesheet" href="style/sobre.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Adote.ME</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><i class="fa-solid fa-paw" id="nav_logo"> AdoteMe <i class="fa-solid fa-paw" id="nav_logo1"></i></i></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adote">Adote</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+           <button class="btn-default">
+                CADASTRE-SE
+            </button>
+            <!--Exclusivo para o menu quando estiver no mobile-->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!--Montando menu mobile-->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Adote</a>
+                </li>
+                <li class="nav-item">
+                <a href="#apoio">Parceiros</a>
+                </li>
+            </ul>
+           <button class="btn-default">
+                CADASTRE-SE
+            </button>
+        </div>
+    </header>
+    <main id="content">
+        <section id="adote">
+            <h2 class="section-title">Animais</h2>
+            <h3 class="section-subtitle">Nosso site está cheio de doguinhos e gatinhos ansiosos por uma família</h3>
+            <div id="pets">
+               <div class="pet">
+                   <div class="pet-heart">
+                       <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <img src="img/pets/ipanema.png" class="pet-image" alt="">
+                   <h3 class="pet-title">Ipanema</h3>
+                   <span class="pet-decription">Cachorro | Fêmea | Adulto | Porte médio</span>
+                   <div class="pet-history">
+                       <p >Gente Linda! Esta jovem menina de aproximadamente 3 anos de idade já sofreu muito nas ruas, mas isso não tirou sua doçura. Está procurando um Lar com humanos cheios de amor.</p>
+                       <div class="btn-botom">
+                           <button class="btn-default" id="btn-contato">ENTRE EM CONTATO</button>
+                           <dialog>
+                               <h2 class="section-title">Quer adotar?</h2>
+                               <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                               <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                               <p> <i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                               <button class="btn-default">Cancelar</button>
+                           </dialog>
+                           </div>
+                   </div>
+               </div>
+                   <div class="pet">
+                       <div class="pet-heart">
+                           <i class="fa-solid fa-heart"></i>
+                       </div>
+                       <img src="img/pets/julie.png" class="pet-image" alt="">
+                       <h3 class="pet-title">Julie</h3>
+                       <span class="pet-decription">Cachorro | Fêmea | Adulto | Porte médio</span>
+                       <div class="pet-history">
+                           <p >Tem por volta de 3 anos. Esta cadastrada, vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!.</p>
+                           <div class="btn-botom">
+                               <button class="btn-default" id="btn-contato1">ENTRE EM CONTATO</button>
+                               <dialog>
+                                   <h2 class="section-title">Quer adotar?</h2>
+                                   <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                   <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                   <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                   <button class="btn-default">Cancelar</button>
+                               </dialog>
+                               </div>
+                       </div>
+               </div>
+               <div class="pet">
+                   <div class="pet-heart">
+                       <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <img src="img/pets/rex.png" class="pet-image" alt="">
+                   <h3 class="pet-title">Rex</h3>
+                   <span class="pet-decription">Cachorro | Macho | Adulto | Porte grande</span>
+                   <div class="pet-history">
+                       <p >pitbull resgatado de maus tratos, foi cuidado, castrado, vacinado. Tem por volta de 2 a 3 anos é muito dócil, calmo e brincalhão.</p>
+                       <div class="btn-botom">
+                           <button class="btn-default" id="btn-contato2">ENTRE EM CONTATO</button>
+                           <dialog>
+                               <h2 class="section-title">Quer adotar?</h2>
+                               <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                               <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                               <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                               <button class="btn-default">Cancelar</button>
+                           </dialog>
+                           </div>
+                   </div>
+           </div>
+           <div class="pet">
+               <div class="pet-heart">
+                   <i class="fa-solid fa-heart"></i>
+               </div>
+               <img src="img/pets/joaquim.png" class="pet-image" alt="">
+               <h3 class="pet-title">Joaquim</h3>
+               <span class="pet-decription">Cachorro | Macho | filhote | Porte grande</span>
+               <div class="pet-history">
+                   <p>Joaquim, filhotinho de 45 dias para adoção responsável. Ele é um cachorrinho super dócil, brincalhão, dengoso e muito lindo! Um típico caramelo legítimo.</p>
+                   <div class="btn-botom">
+                       <button class="btn-default" id="btn-contato3">ENTRE EM CONTATO</button>
+                       <dialog>
+                           <h2 class="section-title">Quer adotar?</h2>
+                           <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                           <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                           <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                           <button class="btn-default">Cancelar</button>
+                       </dialog>
+                       </div>
+               </div>
+               
+       </div>
+       
+            </div>   
+            <div id="pets">
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/theo.jpg" class="pet-image" alt="">
+                    <h3 class="pet-title">Theo</h3>
+                    <span class="pet-decription">Cachorro | Macho | Adulto | Porte grande</span>
+                    <div class="pet-history">
+                        <p >O Theo é um lindo pitbull resgatado de maus tratos, foi cuidado, castrado, vacinado e está prontinho de malas prontas pra ganhar um Lar cheio de amor para a vida toda.
+                            Tem por volta de 2 a 3 anos é muito dócil, calmo e brincalhão.</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato4">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p> <i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+                </div>
+                    <div class="pet">
+                        <div class="pet-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="img/pets/luke.jpg" class="pet-image" alt="">
+                        <h3 class="pet-title">Luke</h3>
+                        <span class="pet-decription">Cachorro | Macho | Adulto | Porte grande</span>
+                        <div class="pet-history">
+                            <p >Luke busca um lar cheio de amor! Um filhotão de aproximadamente 1 ano de porte grande (22kg). Ele é um verdadeiro charme: lindo, dócil e cheio de energia, adora brincar e fazer sapequices, como todo filhote deveria fazer!</p>
+                            <div class="btn-botom">
+                                <button class="btn-default" id="btn-contato5">ENTRE EM CONTATO</button>
+                                <dialog>
+                                    <h2 class="section-title">Quer adotar?</h2>
+                                    <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                    <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                    <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                    <button class="btn-default">Cancelar</button>
+                                </dialog>
+                                </div>
+                        </div>
+                </div>
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/pingo.jpg" class="pet-image" alt="">
+                    <h3 class="pet-title">Pingo</h3>
+                    <span class="pet-decription">Cachorro | Macho | Filhote | Porte médio</span>
+                    <div class="pet-history">
+                        <p >Tem por volta de 5 meses. Vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato6">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+            </div>
+            <div class="pet">
+                <div class="pet-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/pets/flocos.jpg" class="pet-image" alt="">
+                <h3 class="pet-title">Flocos</h3>
+                <span class="pet-decription">Cachorro | Macho | filhote | Porte grande</span>
+                <div class="pet-history">
+                    <p>Joaquim, filhotinho de 90 dias para adoção responsável. Ele é um cachorrinho super dócil, brincalhão, dengoso e muito lindo! Um típico caramelo legítimo.</p>
+                    <div class="btn-botom">
+                        <button class="btn-default" id="btn-contato7">ENTRE EM CONTATO</button>
+                        <dialog>
+                            <h2 class="section-title">Quer adotar?</h2>
+                            <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                            <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                            <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                            <button class="btn-default">Cancelar</button>
+                        </dialog>
+                        </div>
+                </div>
+                
+        </div>
+        
+             </div>
+             <div id="pets">
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/LIA.jpeg" class="pet-image" alt="">
+                    <h3 class="pet-title">Lia</h3>
+                    <span class="pet-decription">Gato | Fêmea | Filhote | Porte pequeno</span>
+                    <div class="pet-history">
+                        <p >Sou uma neném de 45 dias, estou vermifugada e despulgada</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato8">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p> <i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+                </div>
+                    <div class="pet">
+                        <div class="pet-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="img/pets/MARIA.jpg" class="pet-image" alt="">
+                        <h3 class="pet-title">Maria</h3>
+                        <span class="pet-decription">Gato | Fêmea | Filhote | Porte pequeno</span>
+                        <div class="pet-history">
+                            <p >Tem por volta de 3 meses. Vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!</p>
+                            <div class="btn-botom">
+                                <button class="btn-default" id="btn-contato9">ENTRE EM CONTATO</button>
+                                <dialog>
+                                    <h2 class="section-title">Quer adotar?</h2>
+                                    <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                    <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                    <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                    <button class="btn-default">Cancelar</button>
+                                </dialog>
+                                </div>
+                        </div>
+                </div>
+                <div class="pet">
+                    <div class="pet-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/pets/Pantera.jpg" class="pet-image" alt="">
+                    <h3 class="pet-title">Pantera</h3>
+                    <span class="pet-decription">Gato | Fêmea | Filhote | Porte pequeno</span>
+                    <div class="pet-history">
+                        <p >Tem por volta de 3 meses. Vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!</p>
+                        <div class="btn-botom">
+                            <button class="btn-default" id="btn-contato10">ENTRE EM CONTATO</button>
+                            <dialog>
+                                <h2 class="section-title">Quer adotar?</h2>
+                                <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                                <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                                <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                                <button class="btn-default">Cancelar</button>
+                            </dialog>
+                            </div>
+                    </div>
+            </div>
+            <div class="pet">
+                <div class="pet-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/pets/Lion.jpg" class="pet-image" alt="">
+                <h3 class="pet-title">Lion</h3>
+                <span class="pet-decription">Gato | Macho | Filhote | Porte pequeno</span>
+                <div class="pet-history">
+                    <p>Tem por volta de 3 meses. Vermifugada e vacinada! So precisa de uma família com muito AMOR e CARINHO para ter um lar pra chamar de seu!</p>
+                    <div class="btn-botom">
+                        <button class="btn-default" id="btn-contato11">ENTRE EM CONTATO</button>
+                        <dialog>
+                            <h2 class="section-title">Quer adotar?</h2>
+                            <p class="pet-history">Para adotar esse pet ou saber mais sobre ele, entre em contato com o protetor:</p><br>
+                            <i class="fa-solid fa-phone" id="poupap"> 13)997289878</i><br>
+                            <p><i class="fa-solid fa-envelope" id="poupap"> adote@gmail.com</i></p>
+                            <button class="btn-default">Cancelar</button>
+                        </dialog>
+                        </div>
+                </div>
+                
+        </div>
+        
+             </div>      
+       </section>
+    </main>
+    <footer>
+        <img src="img/wave (1).svg" alt="">
+        
+        <div id="footer-itens">
+            <div id="adotar">
+                <h3>Apoiadores</h3>
+                <a href="https://www2.itanhaem.sp.gov.br/2021/10/07/feiras-de-adocao-animal-serao-realizadas-neste-final-de-semana/"><img src="img/ita.png" alt=""></a>
+                <a href="https://www.instagram.com/_aumofadinhaspet/"><img src="img/aumofa.png" alt=""></a>
+            </div>
+            <div id="copy-logo">
+                <a href="index.html"><i class="fa-solid fa-paw" id="nav_logo1"> AdoteMe <i class="fa-solid fa-paw" id="nav_logo1"></i></i></a>
+                <span id="copy">&copy 2024 Kauan Henrique </span>
+            </div>
+            <div id="adotar">
+                <h3>Adote</h3>
+                <p>Adote com responsabilidade</p>
+                <a href="pet.html" class="btn-default1">Pesquisar animais</a>
+            </div>
+         
+        </div>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
